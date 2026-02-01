@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TTS Voice Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Voice Generator 🎙️</h2>
+        <textarea id="textInput" placeholder="এখানে আপনার লেখা লিখুন..."></textarea>
+        
+        <div class="controls">
+            <select id="voiceSelect">
+                <option value="nova">Nova (Female)</option>
+                <option value="alloy">Alloy (Neutral)</option>
+                <option value="echo">Echo (Male)</option>
+                <option value="shimmer">Shimmer (Soft)</option>
+            </select>
+            <button id="convertBtn">Generate & Play</button>
+        </div>
+
+        <div id="status"></div>
+        <audio id="audioPlayer" controls style="display:none;"></audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
